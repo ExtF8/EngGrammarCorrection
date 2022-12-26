@@ -1,11 +1,14 @@
 import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+    organization: "org-zaKGoFkOJIdwBzhjn9X96CuD",
+    apiKey: process.env.OPENAI_API_KEY,
 });
+
 const openai = new OpenAIApi(configuration);
 
-const response = await openai.createCompletion({
+
+export default response = await openai.createCompletion({
   model: "text-davinci-003",
   prompt: "",
   temperature: 0,

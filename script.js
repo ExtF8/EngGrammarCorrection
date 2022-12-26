@@ -1,6 +1,6 @@
 let inputTextValue = document.getElementById('inputText');
 let result = document.getElementById('result');
-let inputText = '';
+let inputText;
 
 
 window.onload = () => {
@@ -22,7 +22,20 @@ clearFields = () => {
 }
 
 correctText = () => {
-    result.innerText = inputText;
+    // Get text value
+    let text = inputText.value;
+
+    // call api to correct text
+    openai.createCompletion(text, function(error, response) {
+        if (error) {
+            console.log(error);
+        } else {
+            let correctedText = response.model.corrected_text;
+            result.innerText = correctedText;
+        }
+    });
+
 }
 
+console.log(inputText)
 
