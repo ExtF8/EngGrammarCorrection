@@ -1,0 +1,24 @@
+{
+  "name": "enggrammarcorrection",
+  "version": "1.0.0",
+  "description": "This is a static web page that allows users to input English text and have it corrected using OpenAI's English Grammar Correction API.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExtF8/EngGrammarCorrection.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ExtF8/EngGrammarCorrection/issues"
+  },
+  "homepage": "https://github.com/ExtF8/EngGrammarCorrection#readme",
+  "dependencies": {
+    "openai": "^3.1.0",
+    "openai-api": "^1.3.1"
+  }
+}
